@@ -9,10 +9,10 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      $url = "https://github.com/PowerShell/PowerShell/releases/download/v7.2.0-preview.3/PowerShell-7.2.0-preview.3-win-x64.zip"
-      $output = Join-Path -Path $(Pipeline.Workspace) -ChildPath "./PowerShell-7.2.0-preview.3-win-x64.zip"
+      $url = "https://github.com/PowerShell/PowerShell/releases/download/v7.2.1/PowerShell-7.2.1-win-x64.zip"
+      $output = Join-Path -Path $(Pipeline.Workspace) -ChildPath "./PowerShell-7.2.1-win-x64.zip"
       (New-Object System.Net.WebClient).DownloadFile($url, $output)
-      $pwshPath= Join-Path -Path $(Pipeline.Workspace) -ChildPath "./PowerShell-7.2.0-preview.3/"
+      $pwshPath= Join-Path -Path $(Pipeline.Workspace) -ChildPath "./PowerShell-7.2.1/"
       Expand-Archive -Path $output -DestinationPath $pwshPath
       $pwshFullPath = Convert-Path $pwshPath
       Write-Host $pwshFullPath
@@ -22,7 +22,7 @@ steps:
   inputs:
     targetType: inline
     script: |
-      $pwshPath= Join-Path -Path $(Pipeline.Workspace) -ChildPath "./PowerShell-7.2.0-preview.3/pwsh.exe"        
+      $pwshPath= Join-Path -Path $(Pipeline.Workspace) -ChildPath "./PowerShell-7.2.1/pwsh.exe"        
       $command = "`$PSVersionTable `
         Install-Module platyPS -Force -Confirm:`$false -Scope CurrentUser `
         Install-Module PowerShellGet -Force -Confirm:`$false -Scope CurrentUser -SkipPublisherCheck `
@@ -41,7 +41,7 @@ steps:
   inputs:
     command: custom
     custom: msbuild
-    arguments: 'tools\Az.Tools.Predictor\build.proj /target:"Clean;Build;GenerateHelp" /p:Configuration=Release /p:PowerShellCoreCommandPrefix="$(Pipeline.Workspace)\\PowerShell-7.2.0-preview.3\\pwsh.exe -NonInteractive -NoLogo -NoProfile -Command"'
+    arguments: 'tools\Az.Tools.Predictor\build.proj /target:"Clean;Build;GenerateHelp" /p:Configuration=Release /p:PowerShellCoreCommandPrefix="$(Pipeline.Workspace)\\PowerShell-7.2.1\\pwsh.exe -NonInteractive -NoLogo -NoProfile -Command"'
 
 - task: UseDotNet@2
   displayName: 'Install DotNet 2.1 Runtime for Signing'
