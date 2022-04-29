@@ -1,0 +1,55 @@
+---
+Module Name: Az.StackHci
+Module Guid: 3159478f-ce7e-472d-9f10-fe8ce1bc636e
+Download Help Link: https://docs.microsoft.com/en-us/powershell/module/az.stackhci
+Help Version: 1.0.0.0
+Locale: en-US
+---
+
+# Az.StackHci Module
+## Description
+Microsoft Azure PowerShell: StackHci cmdlets
+
+## Az.StackHci Cmdlets
+### [Get-AzStackHciArcSetting](Get-AzStackHciArcSetting.md)
+Get ArcSetting resource details of HCI Cluster.
+
+### [Get-AzStackHciCluster](Get-AzStackHciCluster.md)
+Get HCI cluster.
+
+### [Get-AzStackHciExtension](Get-AzStackHciExtension.md)
+Get particular Arc Extension of HCI Cluster.
+
+### [Invoke-AzStackHciUploadClusterCertificate](Invoke-AzStackHciUploadClusterCertificate.md)
+Upload certificate.
+
+### [New-AzStackHciArcSetting](New-AzStackHciArcSetting.md)
+Create ArcSetting for HCI cluster.
+
+### [New-AzStackHciArcSettingPassword](New-AzStackHciArcSettingPassword.md)
+Generate password for arc settings.
+
+### [New-AzStackHciCluster](New-AzStackHciCluster.md)
+Create an HCI cluster.
+
+### [New-AzStackHciExtension](New-AzStackHciExtension.md)
+Create Extension for HCI cluster.
+
+### [Remove-AzStackHciArcSetting](Remove-AzStackHciArcSetting.md)
+Delete ArcSetting resource details of HCI Cluster.
+
+### [Remove-AzStackHciCluster](Remove-AzStackHciCluster.md)
+Delete an HCI cluster.
+
+### [Remove-AzStackHciExtension](Remove-AzStackHciExtension.md)
+Delete particular Arc Extension of HCI Cluster.
+
+### [Update-AzStackHciArcSetting](Update-AzStackHciArcSetting.md)
+Update ArcSettings for HCI cluster.
+
+### [Update-AzStackHciCluster](Update-AzStackHciCluster.md)
+Update an HCI cluster.
+
+### [Update-AzStackHciExtension](Update-AzStackHciExtension.md)
+Update Extension for HCI cluster.
+
