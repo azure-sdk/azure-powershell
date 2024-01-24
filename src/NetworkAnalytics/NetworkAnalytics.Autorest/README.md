@@ -34,13 +34,13 @@ For information on how to develop for `Az.NetworkAnalytics`, see [how-to.md](how
 branch: c364b64a6b412ffd7507dea71ae53251d35748c1
 require:
 # readme.azure.noprofile.md is the common configuration file
-  - $(this-folder)/../readme.azure.noprofile.md
-  - $(repo)/specification/networkanalytics/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/networkanalytics/resource-manager/readme.md
 # If the swagger has not been put in the repo, you may uncomment the following line and refer to it locally
 # - (this-folder)/relative-path-to-your-local-readme.md
 
 try-require: 
-  - $(repo)/specification/networkanalytics/resource-manager/readme.powershell.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/networkanalytics/resource-manager/readme.powershell.md
 
 # For new RP, the version is 0.1.0
 module-version: 0.1.0
@@ -123,3 +123,4 @@ directive:
           }
         }
 ```
+
