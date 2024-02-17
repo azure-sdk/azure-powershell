@@ -51,8 +51,8 @@ In this directory, run AutoRest:
 ``` yaml
 branch: f09aacf4c6b63be416212cb182f6b31e8bc6d545
 require:
-  - $(this-folder)/../readme.azure.noprofile.md
-  - $(repo)/specification/hdinsight/resource-manager/Microsoft.HDInsight/HDInsightOnAks/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/hdinsight/resource-manager/Microsoft.HDInsight/HDInsightOnAks/readme.md
 
 # input-file:
 #  - D:\source\azure-rest-api-specs\specification\hdinsight\resource-manager\Microsoft.HDInsight\HDInsightOnAks\preview\2023-06-01-preview\hdinsight.json
@@ -318,3 +318,4 @@ directive:
 # The below customize the output model   
 
 ```
+
