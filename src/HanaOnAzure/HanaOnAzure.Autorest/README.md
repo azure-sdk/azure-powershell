@@ -46,8 +46,8 @@ In this directory, run AutoRest:
 
 ``` yaml
 require:
-  - $(this-folder)/../readme.azure.noprofile.md
-  - $(repo)/specification/hanaonazure/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/hanaonazure/resource-manager/readme.md
 
 # For new RP, the version is 0.1.0
 module-version: 0.1.0
@@ -146,3 +146,4 @@ directive:
       subject: ^SystemAssignedIdentity$
     remove: true
 ```
+
