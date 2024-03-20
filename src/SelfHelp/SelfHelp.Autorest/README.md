@@ -33,13 +33,13 @@ For information on how to develop for `Az.SelfHelp`, see [how-to.md](how-to.md).
 branch: 270eeb7a7883e0ad4e183e809fb67c6551d0eaa0
 require:
   # readme.azure.noprofile.md is the common configuration file
-  - $(this-folder)/../readme.azure.noprofile.md
-  - $(repo)/specification/help/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/help/resource-manager/readme.md
   # If the swagger has not been put in the repo, you may uncomment the following line and refer to it locally
   # - $(this-folder)/azure-rest-api-specs/specification/help/resource-manager/readme.md
 
 try-require:
-  - $(repo)/specification/help/resource-manager/readme.powershell.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/help/resource-manager/readme.powershell.md
 
 # For new RP, the version is 0.1.0
 module-version: 0.1.0
@@ -65,3 +65,4 @@ directive:
       verb: Set
     remove: true
 ```
+
