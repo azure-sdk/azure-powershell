@@ -49,8 +49,8 @@ In this directory, run AutoRest:
 tag: package-preview-2023-11
 commit: 754d31188c080f20b8155acdf8b8fbd77dace467
 require:
-  - $(this-folder)/../../readme.azure.noprofile.md
-  - $(repo)/specification/hdinsight/resource-manager/Microsoft.HDInsight/HDInsightOnAks/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/hdinsight/resource-manager/Microsoft.HDInsight/HDInsightOnAks/readme.md
 inlining-threshold: 200
 ```
 
@@ -311,3 +311,4 @@ directive:
 # The below customize the output model   
 
 ```
+
