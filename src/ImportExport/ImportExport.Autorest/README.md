@@ -45,8 +45,8 @@ In this directory, run AutoRest:
 ``` yaml
 branch: a59006e985447b922b68210244e5fd024a30f1b4
 require:
-  - $(this-folder)/../readme.azure.noprofile.md
-  - $(repo)/specification/storageimportexport/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/storageimportexport/resource-manager/readme.md
 
 title: ImportExport
 module-version: 0.1.0
@@ -117,3 +117,4 @@ directive:
     hide: true
 
 ```
+

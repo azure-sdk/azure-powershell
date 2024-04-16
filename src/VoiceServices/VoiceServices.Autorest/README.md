@@ -35,10 +35,10 @@ In this directory, run AutoRest:
 ``` yaml
 branch: 78ec1b99699a4bf44869bd13f1b0ed7d92a99c27
 require:
-  - $(this-folder)/../readme.azure.noprofile.md
-  - $(repo)/specification/voiceservices/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/voiceservices/resource-manager/readme.md
 try-require:
-  - $(repo)/specification/voiceservices/resource-manager/readme.powershell.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/voiceservices/resource-manager/readme.powershell.md
 
 subject-prefix: $(service-name)
 
@@ -104,3 +104,4 @@ directive:
   # - model-cmdlet:
     # - ServiceRegionProperties
 ```
+
