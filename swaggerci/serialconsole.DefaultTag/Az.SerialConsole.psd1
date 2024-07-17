@@ -1,0 +1,24 @@
+@{
+  GUID = '69fb0dc5-ed6b-4b6b-991b-9f219c9d0182'
+  RootModule = './Az.SerialConsole.psm1'
+  ModuleVersion = '0.1.0'
+  CompatiblePSEditions = 'Core', 'Desktop'
+  Author = 'Microsoft Corporation'
+  CompanyName = 'Microsoft Corporation'
+  Copyright = 'Microsoft Corporation. All rights reserved.'
+  Description = 'Microsoft Azure PowerShell: SerialConsole cmdlets'
+  PowerShellVersion = '5.1'
+  DotNetFrameworkVersion = '4.7.2'
+  RequiredAssemblies = './bin/Az.SerialConsole.private.dll'
+  FormatsToProcess = './Az.SerialConsole.format.ps1xml'
+  FunctionsToExport = 'Connect-AzSerialConsoleSerialPort', 'Disable-AzSerialConsole', 'Enable-AzSerialConsole', 'Get-AzSerialConsoleSerialPort', 'Get-AzSerialConsoleStatus', 'New-AzSerialConsoleSerialPort', '*'
+  AliasesToExport = '*'
+  PrivateData = @{
+    PSData = @{
+      Tags = 'Azure', 'ResourceManager', 'ARM', 'PSModule', 'SerialConsole'
+      LicenseUri = 'https://aka.ms/azps-license'
+      ProjectUri = 'https://github.com/Azure/azure-powershell'
+      ReleaseNotes = ''
+    }
+  }
+}
