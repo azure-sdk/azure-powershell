@@ -1,0 +1,24 @@
+@{
+  GUID = '089ec1fa-12a0-49f6-afc3-f8eb1b84df5a'
+  RootModule = './Az.ManagedDevOpsInfrastructureTest.psm1'
+  ModuleVersion = '0.1.0'
+  CompatiblePSEditions = 'Core', 'Desktop'
+  Author = 'Microsoft Corporation'
+  CompanyName = 'Microsoft Corporation'
+  Copyright = 'Microsoft Corporation. All rights reserved.'
+  Description = 'Microsoft Azure PowerShell: ManagedDevOpsInfrastructureTest cmdlets'
+  PowerShellVersion = '5.1'
+  DotNetFrameworkVersion = '4.7.2'
+  RequiredAssemblies = './bin/Az.ManagedDevOpsInfrastructureTest.private.dll'
+  FormatsToProcess = './Az.ManagedDevOpsInfrastructureTest.format.ps1xml'
+  FunctionsToExport = 'Get-AzManagedDevOpsInfrastructureTestImageVersion', 'Get-AzManagedDevOpsInfrastructureTestPool', 'Get-AzManagedDevOpsInfrastructureTestResourceDetail', 'Get-AzManagedDevOpsInfrastructureTestSku', 'Invoke-AzManagedDevOpsInfrastructureTestUsageSubscriptionUsage', 'New-AzManagedDevOpsInfrastructureTestPool', 'Remove-AzManagedDevOpsInfrastructureTestPool', 'Update-AzManagedDevOpsInfrastructureTestPool', '*'
+  AliasesToExport = '*'
+  PrivateData = @{
+    PSData = @{
+      Tags = 'Azure', 'ResourceManager', 'ARM', 'PSModule', 'ManagedDevOpsInfrastructureTest'
+      LicenseUri = 'https://aka.ms/azps-license'
+      ProjectUri = 'https://github.com/Azure/azure-powershell'
+      ReleaseNotes = ''
+    }
+  }
+}
