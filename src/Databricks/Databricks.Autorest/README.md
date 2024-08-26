@@ -31,10 +31,10 @@ For information on how to develop for `Az.Databricks`, see [how-to.md](how-to.md
 commit: 8dc708fdac9cb97b346ddb38106ac16e668f64cd
 tag: package-2024-05-01
 require:
-  - $(this-folder)/../../readme.azure.noprofile.md
-  - $(repo)/specification/databricks/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/databricks/resource-manager/readme.md
 try-require:
-  - $(repo)/specification/databricks/resource-manager/readme.powershell.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/databricks/resource-manager/readme.powershell.md
 
 module-version: 1.2.0
 title: Databricks
@@ -282,3 +282,4 @@ directive:
         labels:
           ManagedResourceGroupId: Managed Resource Group ID
 ```
+
