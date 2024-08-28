@@ -1,0 +1,166 @@
+---
+Module Name: Az.OracleDatabaseResourceManagerForTesting
+Module Guid: b5b7dc31-2b9b-4fa5-9f6b-1ae479c7b5cf
+Download Help Link: https://learn.microsoft.com/powershell/module/az.oracledatabaseresourcemanagerfortesting
+Help Version: 1.0.0.0
+Locale: en-US
+---
+
+# Az.OracleDatabaseResourceManagerForTesting Module
+## Description
+Microsoft Azure PowerShell: OracleDatabaseResourceManagerForTesting cmdlets
+
+## Az.OracleDatabaseResourceManagerForTesting Cmdlets
+### [Add-AzOracleDatabaseResourceManagerForTestingCloudExadataInfrastructureStorageCapacity](Add-AzOracleDatabaseResourceManagerForTestingCloudExadataInfrastructureStorageCapacity.md)
+Perform add storage capacity on exadata infra
+
+### [Add-AzOracleDatabaseResourceManagerForTestingCloudVMClusterVM](Add-AzOracleDatabaseResourceManagerForTestingCloudVMClusterVM.md)
+Add VMs to the VM Cluster
+
+### [Add-AzOracleDatabaseResourceManagerForTestingOracleSubscriptionAzureSubscription](Add-AzOracleDatabaseResourceManagerForTestingOracleSubscriptionAzureSubscription.md)
+Add Azure Subscriptions
+
+### [Get-AzOracleDatabaseResourceManagerForTestingAutonomouDatabase](Get-AzOracleDatabaseResourceManagerForTestingAutonomouDatabase.md)
+List AutonomousDatabase resources by subscription ID
+
+### [Get-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseBackup](Get-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseBackup.md)
+List AutonomousDatabaseBackup resources by AutonomousDatabase
+
+### [Get-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseCharacterSet](Get-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseCharacterSet.md)
+List AutonomousDatabaseCharacterSet resources by Location
+
+### [Get-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseNationalCharacterSet](Get-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseNationalCharacterSet.md)
+List AutonomousDatabaseNationalCharacterSet resources by Location
+
+### [Get-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseVersion](Get-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseVersion.md)
+List AutonomousDbVersion resources by Location
+
+### [Get-AzOracleDatabaseResourceManagerForTestingAutonomousDatabase](Get-AzOracleDatabaseResourceManagerForTestingAutonomousDatabase.md)
+Get a AutonomousDatabase
+
+### [Get-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseBackup](Get-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseBackup.md)
+Get a AutonomousDatabaseBackup
+
+### [Get-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseCharacterSet](Get-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseCharacterSet.md)
+Get a AutonomousDatabaseCharacterSet
+
+### [Get-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseNationalCharacterSet](Get-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseNationalCharacterSet.md)
+Get a AutonomousDatabaseNationalCharacterSet
+
+### [Get-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseVersion](Get-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseVersion.md)
+Get a AutonomousDbVersion
+
+### [Get-AzOracleDatabaseResourceManagerForTestingCloudExadataInfrastructure](Get-AzOracleDatabaseResourceManagerForTestingCloudExadataInfrastructure.md)
+Get a CloudExadataInfrastructure
+
+### [Get-AzOracleDatabaseResourceManagerForTestingCloudVMCluster](Get-AzOracleDatabaseResourceManagerForTestingCloudVMCluster.md)
+Get a CloudVmCluster
+
+### [Get-AzOracleDatabaseResourceManagerForTestingCloudVMClusterPrivateIpaddress](Get-AzOracleDatabaseResourceManagerForTestingCloudVMClusterPrivateIpaddress.md)
+List Private IP Addresses by the provided filter
+
+### [Get-AzOracleDatabaseResourceManagerForTestingDbNode](Get-AzOracleDatabaseResourceManagerForTestingDbNode.md)
+Get a DbNode
+
+### [Get-AzOracleDatabaseResourceManagerForTestingDbServer](Get-AzOracleDatabaseResourceManagerForTestingDbServer.md)
+Get a DbServer
+
+### [Get-AzOracleDatabaseResourceManagerForTestingDbSystemShape](Get-AzOracleDatabaseResourceManagerForTestingDbSystemShape.md)
+Get a DbSystemShape
+
+### [Get-AzOracleDatabaseResourceManagerForTestingDnsPrivateView](Get-AzOracleDatabaseResourceManagerForTestingDnsPrivateView.md)
+Get a DnsPrivateView
+
+### [Get-AzOracleDatabaseResourceManagerForTestingDnsPrivateZone](Get-AzOracleDatabaseResourceManagerForTestingDnsPrivateZone.md)
+Get a DnsPrivateZone
+
+### [Get-AzOracleDatabaseResourceManagerForTestingGiVersion](Get-AzOracleDatabaseResourceManagerForTestingGiVersion.md)
+Get a GiVersion
+
+### [Get-AzOracleDatabaseResourceManagerForTestingOracleSubscription](Get-AzOracleDatabaseResourceManagerForTestingOracleSubscription.md)
+Get a OracleSubscription
+
+### [Get-AzOracleDatabaseResourceManagerForTestingOracleSubscriptionActivationLink](Get-AzOracleDatabaseResourceManagerForTestingOracleSubscriptionActivationLink.md)
+List Activation Links
+
+### [Get-AzOracleDatabaseResourceManagerForTestingOracleSubscriptionCloudAccountDetail](Get-AzOracleDatabaseResourceManagerForTestingOracleSubscriptionCloudAccountDetail.md)
+List Cloud Account Details
+
+### [Get-AzOracleDatabaseResourceManagerForTestingOracleSubscriptionSaaSubscriptionDetail](Get-AzOracleDatabaseResourceManagerForTestingOracleSubscriptionSaaSubscriptionDetail.md)
+List Saas Subscription Details
+
+### [Get-AzOracleDatabaseResourceManagerForTestingSystemVersion](Get-AzOracleDatabaseResourceManagerForTestingSystemVersion.md)
+Get a SystemVersion
+
+### [Get-AzOracleDatabaseResourceManagerForTestingVirtualNetworkAddress](Get-AzOracleDatabaseResourceManagerForTestingVirtualNetworkAddress.md)
+Get a VirtualNetworkAddress
+
+### [Invoke-AzOracleDatabaseResourceManagerForTestingActionDbNode](Invoke-AzOracleDatabaseResourceManagerForTestingActionDbNode.md)
+VM actions on DbNode of VM Cluster by the provided filter
+
+### [Invoke-AzOracleDatabaseResourceManagerForTestingShrinkAutonomouDatabase](Invoke-AzOracleDatabaseResourceManagerForTestingShrinkAutonomouDatabase.md)
+This operation shrinks the current allocated storage down to the current actual used data storage.
+
+### [Invoke-AzOracleDatabaseResourceManagerForTestingSwitchoverAutonomouDatabase](Invoke-AzOracleDatabaseResourceManagerForTestingSwitchoverAutonomouDatabase.md)
+Perform switchover action on Autonomous Database
+
+### [New-AzOracleDatabaseResourceManagerForTestingAutonomouDatabase](New-AzOracleDatabaseResourceManagerForTestingAutonomouDatabase.md)
+Create a AutonomousDatabase
+
+### [New-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseBackup](New-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseBackup.md)
+Create a AutonomousDatabaseBackup
+
+### [New-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseWallet](New-AzOracleDatabaseResourceManagerForTestingAutonomouDatabaseWallet.md)
+Generate wallet action on Autonomous Database
+
+### [New-AzOracleDatabaseResourceManagerForTestingCloudExadataInfrastructure](New-AzOracleDatabaseResourceManagerForTestingCloudExadataInfrastructure.md)
+Create a CloudExadataInfrastructure
+
+### [New-AzOracleDatabaseResourceManagerForTestingCloudVMCluster](New-AzOracleDatabaseResourceManagerForTestingCloudVMCluster.md)
+Create a CloudVmCluster
+
+### [New-AzOracleDatabaseResourceManagerForTestingOracleSubscription](New-AzOracleDatabaseResourceManagerForTestingOracleSubscription.md)
+Create a OracleSubscription
+
+### [New-AzOracleDatabaseResourceManagerForTestingVirtualNetworkAddress](New-AzOracleDatabaseResourceManagerForTestingVirtualNetworkAddress.md)
+Create a VirtualNetworkAddress
+
+### [Remove-AzOracleDatabaseResourceManagerForTestingAutonomousDatabase](Remove-AzOracleDatabaseResourceManagerForTestingAutonomousDatabase.md)
+Delete a AutonomousDatabase
+
+### [Remove-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseBackup](Remove-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseBackup.md)
+Delete a AutonomousDatabaseBackup
+
+### [Remove-AzOracleDatabaseResourceManagerForTestingCloudExadataInfrastructure](Remove-AzOracleDatabaseResourceManagerForTestingCloudExadataInfrastructure.md)
+Delete a CloudExadataInfrastructure
+
+### [Remove-AzOracleDatabaseResourceManagerForTestingCloudVMCluster](Remove-AzOracleDatabaseResourceManagerForTestingCloudVMCluster.md)
+Delete a CloudVmCluster
+
+### [Remove-AzOracleDatabaseResourceManagerForTestingCloudVMClusterVM](Remove-AzOracleDatabaseResourceManagerForTestingCloudVMClusterVM.md)
+Remove VMs from the VM Cluster
+
+### [Remove-AzOracleDatabaseResourceManagerForTestingOracleSubscription](Remove-AzOracleDatabaseResourceManagerForTestingOracleSubscription.md)
+Delete a OracleSubscription
+
+### [Remove-AzOracleDatabaseResourceManagerForTestingVirtualNetworkAddress](Remove-AzOracleDatabaseResourceManagerForTestingVirtualNetworkAddress.md)
+Delete a VirtualNetworkAddress
+
+### [Restore-AzOracleDatabaseResourceManagerForTestingAutonomousDatabase](Restore-AzOracleDatabaseResourceManagerForTestingAutonomousDatabase.md)
+Restores an Autonomous Database based on the provided request parameters.
+
+### [Update-AzOracleDatabaseResourceManagerForTestingAutonomousDatabase](Update-AzOracleDatabaseResourceManagerForTestingAutonomousDatabase.md)
+Update a AutonomousDatabase
+
+### [Update-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseBackup](Update-AzOracleDatabaseResourceManagerForTestingAutonomousDatabaseBackup.md)
+Update a AutonomousDatabaseBackup
+
+### [Update-AzOracleDatabaseResourceManagerForTestingCloudExadataInfrastructure](Update-AzOracleDatabaseResourceManagerForTestingCloudExadataInfrastructure.md)
+Update a CloudExadataInfrastructure
+
+### [Update-AzOracleDatabaseResourceManagerForTestingCloudVMCluster](Update-AzOracleDatabaseResourceManagerForTestingCloudVMCluster.md)
+Update a CloudVmCluster
+
+### [Update-AzOracleDatabaseResourceManagerForTestingOracleSubscription](Update-AzOracleDatabaseResourceManagerForTestingOracleSubscription.md)
+Update a OracleSubscription
+
