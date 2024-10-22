@@ -29,13 +29,13 @@ For information on how to develop for `Az.MachineLearningServices`, see [how-to.
 ``` yaml
 commit: d4782cf23e78d441b42d06defad8116fc85d8459
 require:
-  - $(this-folder)/../../readme.azure.noprofile.md
-  - $(repo)/specification/machinelearningservices/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/machinelearningservices/resource-manager/readme.md
 # input-file:
-#   - $(repo)/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/machineLearningServices.json
-#   - $(repo)/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/mfe.json
-#   - $(repo)/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/workspaceFeatures.json
-#   - $(repo)/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/registries.json
+#   - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/machineLearningServices.json
+#   - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/mfe.json
+#   - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/workspaceFeatures.json
+#   - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/stable/2024-04-01/registries.json
 
 subject-prefix: MLWorkspace
 title: MachineLearningServices
@@ -631,3 +631,4 @@ directive:
     # - ServicePrincipalAuthTypeWorkspaceConnectionProperties
     # - UsernamePasswordAuthTypeWorkspaceConnectionProperties
 ```
+
