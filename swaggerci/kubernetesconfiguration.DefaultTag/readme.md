@@ -1,0 +1,10 @@
+### AutoRest Configuration
+> see https://aka.ms/autorest
+
+``` yaml
+require:
+    - $(this-folder)/../../tools/SwaggerCI/readme.azure.noprofile.md
+    - $(this-folder)/../../../azure-rest-api-specs/specification/kubernetesconfiguration/resource-manager/Microsoft.KubernetesConfiguration/sourceControlConfigurations/readme.md
+try-require:
+    - $(this-folder)/../../../azure-rest-api-specs/specification/kubernetesconfiguration/resource-manager/Microsoft.KubernetesConfiguration/sourceControlConfigurations/readme.powershell.md
+```
