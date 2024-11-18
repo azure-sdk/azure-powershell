@@ -1,0 +1,271 @@
+---
+external help file:
+Module Name: Az.AppConfiguration
+online version: https://learn.microsoft.com/powershell/module/az.appconfiguration/new-azappconfigurationsnapshot
+schema: 2.0.0
+---
+
+# New-AzAppConfigurationSnapshot
+
+## SYNOPSIS
+Creates a snapshot.
+NOTE: This operation is intended for use in Azure Resource Manager (ARM) Template deployments.
+For all other scenarios involving App Configuration snapshots the data plane API should be used instead.
+
+## SYNTAX
+
+```
+New-AzAppConfigurationSnapshot -ConfigStoreName <String> -Name <String> -ResourceGroupName <String>
+ [-SubscriptionId <String>] [-CompositionType <CompositionType>] [-Filter <IKeyValueFilter[]>]
+ [-RetentionPeriod <Int64>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Creates a snapshot.
+NOTE: This operation is intended for use in Azure Resource Manager (ARM) Template deployments.
+For all other scenarios involving App Configuration snapshots the data plane API should be used instead.
+
+## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+{{ Add code here }}
+```
+
+```output
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+{{ Add code here }}
+```
+
+```output
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+## PARAMETERS
+
+### -AsJob
+Run the command as a job
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CompositionType
+The composition type describes how the key-values within the snapshot are composed.
+The 'key' composition type ensures there are no two key-values containing the same key.
+The 'key_label' composition type ensures there are no two key-values containing the same key and label.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Support.CompositionType
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ConfigStoreName
+The name of the configuration store.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+The DefaultProfile parameter is not functional.
+Use the SubscriptionId parameter when available if executing the cmdlet against a different subscription.
+
+```yaml
+Type: System.Management.Automation.PSObject
+Parameter Sets: (All)
+Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+A list of filters used to filter the key-values included in the snapshot.
+To construct, see NOTES section for FILTER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.Api20240501.IKeyValueFilter[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+The name of the snapshot.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases: SnapshotName
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NoWait
+Run the command asynchronously
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+The name of the resource group.
+The name is case insensitive.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RetentionPeriod
+The amount of time, in seconds, that a snapshot will remain in the archived state before expiring.
+This property is only writable during the creation of a snapshot.
+If not specified, the default lifetime of key-value revisions will be used.
+
+```yaml
+Type: System.Int64
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+The Microsoft Azure subscription ID.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Tag
+The tags of the snapshot.
+NOTE: These are data plane tags, not Azure Resource Manager (ARM) tags.
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.AppConfiguration.Models.Api20240501.ISnapshot
+
+## NOTES
+
+## RELATED LINKS
+
