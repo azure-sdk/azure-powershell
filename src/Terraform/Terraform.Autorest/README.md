@@ -31,11 +31,11 @@ For information on how to develop for `Az.Terraform`, see [how-to.md](how-to.md)
 commit: 46b386376ab0d53228a7f366d28e44bac8d592c3
 require:
 # readme.azure.noprofile.md is the common configuration file
-  - $(this-folder)/../../readme.azure.noprofile.md
-  - $(repo)/specification/terraform/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/terraform/resource-manager/readme.md
 
 try-require: 
-  - $(repo)/specification/xxx/resource-manager/readme.powershell.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/xxx/resource-manager/readme.powershell.md
 
 # For new RP, the version is 0.1.0
 module-version: 0.1.0
@@ -99,3 +99,4 @@ directive:
         preview-message: The Export Azure Terraform module is in preview.
         estimated-ga-date: 2025-10-01
 ```
+
