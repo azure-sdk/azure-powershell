@@ -31,11 +31,11 @@ For information on how to develop for `Az.Mdp`, see [how-to.md](how-to.md).
 commit: 8b9c9e84b2ed9da6d74ce0856bb0d8973912cb2f
 require:
 # readme.azure.noprofile.md is the common configuration file
-  - $(this-folder)/../../readme.azure.noprofile.md
-  - $(repo)/specification/devopsinfrastructure/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/devopsinfrastructure/resource-manager/readme.md
 
 try-require: 
-  - $(repo)/specification/devopsinfrastructure/resource-manager/readme.powershell.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/devopsinfrastructure/resource-manager/readme.powershell.md
 
 # For new RP, the version is 0.1.0
 module-version: 0.1.0
@@ -70,3 +70,4 @@ directive:
     - OrganizationProfile
     - FabricProfile
 ```
+
