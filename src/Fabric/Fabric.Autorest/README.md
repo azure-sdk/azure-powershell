@@ -31,13 +31,13 @@ For information on how to develop for `Az.Fabric`, see [how-to.md](how-to.md).
 commit: a3913f4b26467aed413cdc907116e99894f08994
 require:
 # readme.azure.noprofile.md is the common configuration file
-  - $(this-folder)/../../readme.azure.noprofile.md
-  - $(repo)/specification/fabric/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/fabric/resource-manager/readme.md
 # If the swagger has not been put in the repo, you may uncomment the following line and refer to it locally
 # - (this-folder)/relative-path-to-your-local-readme.md
 
 try-require: 
-  - $(repo)/specification/fabric/resource-manager/readme.powershell.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/fabric/resource-manager/readme.powershell.md
 
 # For new RP, the version is 0.1.0
 module-version: 0.1.0
@@ -71,3 +71,4 @@ directive:
       verb: Set
     remove: true
 ```
+
