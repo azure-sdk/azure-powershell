@@ -31,10 +31,10 @@ For information on how to develop for `Az.ComputeFleet`, see [how-to.md](how-to.
 commit: 366aaa13cdd218b9adac716680e49473673410c8
 
 require:
-  - $(this-folder)/../../readme.azure.noprofile.md
-  - $(repo)/specification/azurefleet/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/azurefleet/resource-manager/readme.md
 try-require:
-  - $(repo)/specification/azurefleet/resource-manager/readme.powershell.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/azurefleet/resource-manager/readme.powershell.md
 
 module-version: 0.1.0
 title: ComputeFleet
@@ -85,3 +85,4 @@ directive:
     remove: true
     
 ```
+

@@ -49,8 +49,8 @@ In this directory, run AutoRest:
 tag: package-preview-2024-05
 commit: c766bb559e93067acf5a852e63f7edcee75a2f5b
 require:
-  - $(this-folder)/../../readme.azure.noprofile.md
-  - $(repo)/specification/hdinsight/resource-manager/Microsoft.HDInsight/HDInsightOnAks/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/hdinsight/resource-manager/Microsoft.HDInsight/HDInsightOnAks/readme.md
 inlining-threshold: 200
 ```
 
@@ -357,3 +357,4 @@ directive:
       verb: Invoke
       subject: ClusterPoolUpgrade
 ```
+

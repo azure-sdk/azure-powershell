@@ -36,13 +36,13 @@ commit: a6074b7654c388dec49c9969d0136cfeb03575c9
 tag:  package-databoundaries-2024-08
 require:
 # readme.azure.noprofile.md is the common configuration file
-  - $(this-folder)/../../readme.azure.noprofile.md
-  - $(repo)/specification/resources/resource-manager/readme.md
+  - /mnt/vss/_work/1/s/azure-powershell/tools/SwaggerCI/readme.azure.noprofile.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/resources/resource-manager/readme.md
 # If the swagger has not been put in the repo, you may uncomment the following line and refer to it locally
 # - (this-folder)/relative-path-to-your-local-readme.md
 
 try-require: 
-  - $(repo)/specification/resources/resource-manager/readme.powershell.md
+  - /mnt/vss/_work/1/s/azure-rest-api-specs/specification/resources/resource-manager/readme.powershell.md
 
 directive:
 # Following are common directives which are normally required in all the RPs
@@ -60,3 +60,5 @@ directive:
   remove: true
 
   ```
+
+
