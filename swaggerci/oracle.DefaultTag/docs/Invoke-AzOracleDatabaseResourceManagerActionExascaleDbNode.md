@@ -1,0 +1,275 @@
+---
+external help file:
+Module Name: Az.OracleDatabaseResourceManager
+online version: https://learn.microsoft.com/powershell/module/az.oracledatabaseresourcemanager/invoke-azoracledatabaseresourcemanageractionexascaledbnode
+schema: 2.0.0
+---
+
+# Invoke-AzOracleDatabaseResourceManagerActionExascaleDbNode
+
+## SYNOPSIS
+VM actions on DbNode of ExadbVmCluster by the provided filter
+
+## SYNTAX
+
+### ActionExpanded (Default)
+```
+Invoke-AzOracleDatabaseResourceManagerActionExascaleDbNode -ExadbVMClusterName <String>
+ -ExascaleDbNodeName <String> -ResourceGroupName <String> -Action <DbNodeActionEnum>
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### Action
+```
+Invoke-AzOracleDatabaseResourceManagerActionExascaleDbNode -ExadbVMClusterName <String>
+ -ExascaleDbNodeName <String> -ResourceGroupName <String> -Body <IDbNodeAction> [-SubscriptionId <String>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ActionViaIdentity
+```
+Invoke-AzOracleDatabaseResourceManagerActionExascaleDbNode
+ -InputObject <IOracleDatabaseResourceManagerIdentity> -Body <IDbNodeAction> [-DefaultProfile <PSObject>]
+ [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ActionViaIdentityExpanded
+```
+Invoke-AzOracleDatabaseResourceManagerActionExascaleDbNode
+ -InputObject <IOracleDatabaseResourceManagerIdentity> -Action <DbNodeActionEnum> [-DefaultProfile <PSObject>]
+ [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+## DESCRIPTION
+VM actions on DbNode of ExadbVmCluster by the provided filter
+
+## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+{{ Add code here }}
+```
+
+```output
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+{{ Add code here }}
+```
+
+```output
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+## PARAMETERS
+
+### -Action
+Db action
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.OracleDatabaseResourceManager.Support.DbNodeActionEnum
+Parameter Sets: ActionExpanded, ActionViaIdentityExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AsJob
+Run the command as a job
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Body
+DbNode action object
+To construct, see NOTES section for BODY properties and create a hash table.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.OracleDatabaseResourceManager.Models.Api20250301.IDbNodeAction
+Parameter Sets: Action, ActionViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+The DefaultProfile parameter is not functional.
+Use the SubscriptionId parameter when available if executing the cmdlet against a different subscription.
+
+```yaml
+Type: System.Management.Automation.PSObject
+Parameter Sets: (All)
+Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExadbVMClusterName
+The name of the ExadbVmCluster
+
+```yaml
+Type: System.String
+Parameter Sets: Action, ActionExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExascaleDbNodeName
+The name of the ExascaleDbNode
+
+```yaml
+Type: System.String
+Parameter Sets: Action, ActionExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.OracleDatabaseResourceManager.Models.IOracleDatabaseResourceManagerIdentity
+Parameter Sets: ActionViaIdentity, ActionViaIdentityExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -NoWait
+Run the command asynchronously
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+The name of the resource group.
+The name is case insensitive.
+
+```yaml
+Type: System.String
+Parameter Sets: Action, ActionExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+The ID of the target subscription.
+The value must be an UUID.
+
+```yaml
+Type: System.String
+Parameter Sets: Action, ActionExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.OracleDatabaseResourceManager.Models.Api20250301.IDbNodeAction
+
+### Microsoft.Azure.PowerShell.Cmdlets.OracleDatabaseResourceManager.Models.IOracleDatabaseResourceManagerIdentity
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.OracleDatabaseResourceManager.Support.AzureResourceProvisioningState
+
+## NOTES
+
+## RELATED LINKS
+
