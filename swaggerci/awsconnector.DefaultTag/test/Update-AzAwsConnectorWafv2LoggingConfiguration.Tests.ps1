@@ -1,0 +1,25 @@
+if(($null -eq $TestName) -or ($TestName -contains 'Update-AzAwsConnectorWafv2LoggingConfiguration'))
+{
+  $loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
+  if (-Not (Test-Path -Path $loadEnvPath)) {
+      $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
+  }
+  . ($loadEnvPath)
+  $TestRecordingFile = Join-Path $PSScriptRoot 'Update-AzAwsConnectorWafv2LoggingConfiguration.Recording.json'
+  $currentPath = $PSScriptRoot
+  while(-not $mockingPath) {
+      $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
+      $currentPath = Split-Path -Path $currentPath -Parent
+  }
+  . ($mockingPath | Select-Object -First 1).FullName
+}
+
+Describe 'Update-AzAwsConnectorWafv2LoggingConfiguration' {
+    It 'UpdateExpanded' -skip {
+        { throw [System.NotImplementedException] } | Should -Not -Throw
+    }
+
+    It 'UpdateViaIdentityExpanded' -skip {
+        { throw [System.NotImplementedException] } | Should -Not -Throw
+    }
+}
