@@ -1,0 +1,24 @@
+@{
+  GUID = '5aaa55a3-4fb9-4f38-9c1a-e58d63fb8133'
+  RootModule = './Az.OracleDatabaseResourceManager.psm1'
+  ModuleVersion = '0.1.0'
+  CompatiblePSEditions = 'Core', 'Desktop'
+  Author = 'Microsoft Corporation'
+  CompanyName = 'Microsoft Corporation'
+  Copyright = 'Microsoft Corporation. All rights reserved.'
+  Description = 'Microsoft Azure PowerShell: OracleDatabaseResourceManager cmdlets'
+  PowerShellVersion = '5.1'
+  DotNetFrameworkVersion = '4.7.2'
+  RequiredAssemblies = './bin/Az.OracleDatabaseResourceManager.private.dll'
+  FormatsToProcess = './Az.OracleDatabaseResourceManager.format.ps1xml'
+  FunctionsToExport = 'Add-AzOracleDatabaseResourceManagerCloudExadataInfrastructureStorageCapacity', 'Add-AzOracleDatabaseResourceManagerCloudVMClusterVM', 'Add-AzOracleDatabaseResourceManagerOracleSubscriptionAzureSubscription', 'Get-AzOracleDatabaseResourceManagerAutonomouDatabase', 'Get-AzOracleDatabaseResourceManagerAutonomouDatabaseBackup', 'Get-AzOracleDatabaseResourceManagerAutonomouDatabaseCharacterSet', 'Get-AzOracleDatabaseResourceManagerAutonomouDatabaseNationalCharacterSet', 'Get-AzOracleDatabaseResourceManagerAutonomouDatabaseVersion', 'Get-AzOracleDatabaseResourceManagerAutonomousDatabase', 'Get-AzOracleDatabaseResourceManagerAutonomousDatabaseBackup', 'Get-AzOracleDatabaseResourceManagerAutonomousDatabaseCharacterSet', 'Get-AzOracleDatabaseResourceManagerAutonomousDatabaseNationalCharacterSet', 'Get-AzOracleDatabaseResourceManagerAutonomousDatabaseVersion', 'Get-AzOracleDatabaseResourceManagerCloudExadataInfrastructure', 'Get-AzOracleDatabaseResourceManagerCloudVMCluster', 'Get-AzOracleDatabaseResourceManagerCloudVMClusterPrivateIpaddress', 'Get-AzOracleDatabaseResourceManagerDbNode', 'Get-AzOracleDatabaseResourceManagerDbServer', 'Get-AzOracleDatabaseResourceManagerDbSystemShape', 'Get-AzOracleDatabaseResourceManagerDnsPrivateView', 'Get-AzOracleDatabaseResourceManagerDnsPrivateZone', 'Get-AzOracleDatabaseResourceManagerExadbVMCluster', 'Get-AzOracleDatabaseResourceManagerExascaleDbNode', 'Get-AzOracleDatabaseResourceManagerExascaleDbStorageVault', 'Get-AzOracleDatabaseResourceManagerFlexComponent', 'Get-AzOracleDatabaseResourceManagerGiMinorVersion', 'Get-AzOracleDatabaseResourceManagerGiVersion', 'Get-AzOracleDatabaseResourceManagerOracleSubscription', 'Get-AzOracleDatabaseResourceManagerOracleSubscriptionActivationLink', 'Get-AzOracleDatabaseResourceManagerOracleSubscriptionCloudAccountDetail', 'Get-AzOracleDatabaseResourceManagerOracleSubscriptionSaaSubscriptionDetail', 'Get-AzOracleDatabaseResourceManagerSystemVersion', 'Get-AzOracleDatabaseResourceManagerVirtualNetworkAddress', 'Invoke-AzOracleDatabaseResourceManagerActionDbNode', 'Invoke-AzOracleDatabaseResourceManagerActionExascaleDbNode', 'Invoke-AzOracleDatabaseResourceManagerShrinkAutonomouDatabase', 'Invoke-AzOracleDatabaseResourceManagerSwitchoverAutonomouDatabase', 'New-AzOracleDatabaseResourceManagerAutonomouDatabase', 'New-AzOracleDatabaseResourceManagerAutonomouDatabaseBackup', 'New-AzOracleDatabaseResourceManagerAutonomouDatabaseWallet', 'New-AzOracleDatabaseResourceManagerCloudExadataInfrastructure', 'New-AzOracleDatabaseResourceManagerCloudVMCluster', 'New-AzOracleDatabaseResourceManagerExadbVMCluster', 'New-AzOracleDatabaseResourceManagerExascaleDbStorageVault', 'New-AzOracleDatabaseResourceManagerOracleSubscription', 'New-AzOracleDatabaseResourceManagerVirtualNetworkAddress', 'Remove-AzOracleDatabaseResourceManagerAutonomousDatabase', 'Remove-AzOracleDatabaseResourceManagerAutonomousDatabaseBackup', 'Remove-AzOracleDatabaseResourceManagerCloudExadataInfrastructure', 'Remove-AzOracleDatabaseResourceManagerCloudVMCluster', 'Remove-AzOracleDatabaseResourceManagerCloudVMClusterVM', 'Remove-AzOracleDatabaseResourceManagerExadbVMCluster', 'Remove-AzOracleDatabaseResourceManagerExadbVMClusterVM', 'Remove-AzOracleDatabaseResourceManagerExascaleDbStorageVault', 'Remove-AzOracleDatabaseResourceManagerOracleSubscription', 'Remove-AzOracleDatabaseResourceManagerVirtualNetworkAddress', 'Rename-AzOracleDatabaseResourceManagerAutonomouDatabaseDisasterRecoveryConfiguration', 'Restore-AzOracleDatabaseResourceManagerAutonomousDatabase', 'Update-AzOracleDatabaseResourceManagerAutonomousDatabase', 'Update-AzOracleDatabaseResourceManagerAutonomousDatabaseBackup', 'Update-AzOracleDatabaseResourceManagerCloudExadataInfrastructure', 'Update-AzOracleDatabaseResourceManagerCloudVMCluster', 'Update-AzOracleDatabaseResourceManagerExadbVMCluster', 'Update-AzOracleDatabaseResourceManagerExascaleDbStorageVault', 'Update-AzOracleDatabaseResourceManagerOracleSubscription', '*'
+  AliasesToExport = '*'
+  PrivateData = @{
+    PSData = @{
+      Tags = 'Azure', 'ResourceManager', 'ARM', 'PSModule', 'OracleDatabaseResourceManager'
+      LicenseUri = 'https://aka.ms/azps-license'
+      ProjectUri = 'https://github.com/Azure/azure-powershell'
+      ReleaseNotes = ''
+    }
+  }
+}
