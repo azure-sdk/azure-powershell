@@ -1,0 +1,578 @@
+---
+external help file:
+Module Name: Az.Search
+online version: https://learn.microsoft.com/powershell/module/az.search/update-azsearchservice
+schema: 2.0.0
+---
+
+# Update-AzSearchService
+
+## SYNOPSIS
+Updates an existing search service in the given resource group.
+
+## SYNTAX
+
+### UpdateExpanded (Default)
+```
+Update-AzSearchService -ResourceGroupName <String> -SearchServiceName <String> [-SubscriptionId <String>]
+ [-ClientRequestId <String>] [-AadOrApiKeyAadAuthFailureMode <AadAuthFailureMode>]
+ [-AuthOptionApiKeyOnly <IAny>] [-ComputeType <ComputeType>]
+ [-DataExfiltrationProtection <SearchDataExfiltrationProtection[]>] [-DisableLocalAuth]
+ [-EncryptionWithCmkEnforcement <SearchEncryptionWithCmk>] [-Endpoint <String>] [-HostingMode <HostingMode>]
+ [-IdentityType <IdentityType>] [-IdentityUserAssignedIdentity <Hashtable>] [-Location <String>]
+ [-NetworkRuleSetBypass <SearchBypass>] [-NetworkRuleSetIPRule <IIPRule[]>] [-PartitionCount <Int32>]
+ [-PublicNetworkAccess <PublicNetworkAccess>] [-ReplicaCount <Int32>] [-SemanticSearch <SearchSemanticSearch>]
+ [-SkuName <SkuName>] [-Tag <Hashtable>] [-UpgradeAvailable <UpgradeAvailable>] [-DefaultProfile <PSObject>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-AzSearchService -InputObject <ISearchIdentity> [-ClientRequestId <String>]
+ [-AadOrApiKeyAadAuthFailureMode <AadAuthFailureMode>] [-AuthOptionApiKeyOnly <IAny>]
+ [-ComputeType <ComputeType>] [-DataExfiltrationProtection <SearchDataExfiltrationProtection[]>]
+ [-DisableLocalAuth] [-EncryptionWithCmkEnforcement <SearchEncryptionWithCmk>] [-Endpoint <String>]
+ [-HostingMode <HostingMode>] [-IdentityType <IdentityType>] [-IdentityUserAssignedIdentity <Hashtable>]
+ [-Location <String>] [-NetworkRuleSetBypass <SearchBypass>] [-NetworkRuleSetIPRule <IIPRule[]>]
+ [-PartitionCount <Int32>] [-PublicNetworkAccess <PublicNetworkAccess>] [-ReplicaCount <Int32>]
+ [-SemanticSearch <SearchSemanticSearch>] [-SkuName <SkuName>] [-Tag <Hashtable>]
+ [-UpgradeAvailable <UpgradeAvailable>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Upgrade
+```
+Update-AzSearchService -ResourceGroupName <String> -SearchServiceName <String> [-SubscriptionId <String>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpgradeViaIdentity
+```
+Update-AzSearchService -InputObject <ISearchIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Updates an existing search service in the given resource group.
+
+## EXAMPLES
+
+### Example 1: {{ Add title here }}
+```powershell
+{{ Add code here }}
+```
+
+```output
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+{{ Add code here }}
+```
+
+```output
+{{ Add output here }}
+```
+
+{{ Add description here }}
+
+## PARAMETERS
+
+### -AadOrApiKeyAadAuthFailureMode
+Describes what response the data plane API of a search service would send for requests that failed authentication.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Support.AadAuthFailureMode
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AsJob
+Run the command as a job
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: Upgrade, UpgradeViaIdentity
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AuthOptionApiKeyOnly
+Indicates that only the API key can be used for authentication.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Models.IAny
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ClientRequestId
+A client-generated GUID value that identifies this request.
+If specified, this will be included in response information as a way to track the request.
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ComputeType
+Configure this property to support the search service using either the Default Compute or Azure Confidential Compute.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Support.ComputeType
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DataExfiltrationProtection
+A list of data exfiltration scenarios that are explicitly disallowed for the search service.
+Currently, the only supported value is 'All' to disable all possible data export scenarios with more fine grained controls planned for the future.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Support.SearchDataExfiltrationProtection[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DefaultProfile
+The DefaultProfile parameter is not functional.
+Use the SubscriptionId parameter when available if executing the cmdlet against a different subscription.
+
+```yaml
+Type: System.Management.Automation.PSObject
+Parameter Sets: (All)
+Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisableLocalAuth
+When set to true, calls to the search service will not be permitted to utilize API keys for authentication.
+This cannot be set to true if 'dataPlaneAuthOptions' are defined.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EncryptionWithCmkEnforcement
+Describes how a search service should enforce compliance if it finds objects that aren't encrypted with the customer-managed key.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Support.SearchEncryptionWithCmk
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Endpoint
+The endpoint of the Azure AI Search service.
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HostingMode
+Applicable only for the standard3 SKU.
+You can set this property to enable up to 3 high density partitions that allow up to 1000 indexes, which is much higher than the maximum indexes allowed for any other SKU.
+For the standard3 SKU, the value is either 'default' or 'highDensity'.
+For all other SKUs, this value must be 'default'.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Support.HostingMode
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IdentityType
+The type of identity used for the resource.
+The type 'SystemAssigned, UserAssigned' includes both an identity created by the system and a set of user assigned identities.
+The type 'None' will remove all identities from the service.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Support.IdentityType
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IdentityUserAssignedIdentity
+The list of user identities associated with the resource.
+The user identity dictionary key references will be ARM resource IDs in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Models.ISearchIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpgradeViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Location
+The geographic location of the resource.
+This must be one of the supported and registered Azure geo regions (for example, West US, East US, Southeast Asia, and so forth).
+This property is required when creating a new resource.
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NetworkRuleSetBypass
+Possible origins of inbound traffic that can bypass the rules defined in the 'ipRules' section.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Support.SearchBypass
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NetworkRuleSetIPRule
+A list of IP restriction rules that defines the inbound network(s) with allowing access to the search service endpoint.
+At the meantime, all other public IP networks are blocked by the firewall.
+These restriction rules are applied only when the 'publicNetworkAccess' of the search service is 'enabled'; otherwise, traffic over public interface is not allowed even with any public IP rules, and private endpoint connections would be the exclusive access method.
+To construct, see NOTES section for NETWORKRULESETIPRULE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Models.Api20250501.IIPRule[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NoWait
+Run the command asynchronously
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: Upgrade, UpgradeViaIdentity
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PartitionCount
+The number of partitions in the search service; if specified, it can be 1, 2, 3, 4, 6, or 12.
+Values greater than 1 are only valid for standard SKUs.
+For 'standard3' services with hostingMode set to 'highDensity', the allowed values are between 1 and 3.
+
+```yaml
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PublicNetworkAccess
+This value can be set to 'enabled' to avoid breaking changes on existing customer resources and templates.
+If set to 'disabled', traffic over public interface is not allowed, and private endpoint connections would be the exclusive access method.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Support.PublicNetworkAccess
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReplicaCount
+The number of replicas in the search service.
+If specified, it must be a value between 1 and 12 inclusive for standard SKUs or between 1 and 3 inclusive for basic SKU.
+
+```yaml
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceGroupName
+The name of the resource group within the current subscription.
+You can obtain this value from the Azure Resource Manager API or the portal.
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateExpanded, Upgrade
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SearchServiceName
+The name of the Azure AI Search service to update.
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateExpanded, Upgrade
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SemanticSearch
+Sets options that control the availability of semantic search.
+This configuration is only possible for certain Azure AI Search SKUs in certain locations.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Support.SearchSemanticSearch
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SkuName
+The SKU of the search service.
+Valid values include: 'free': Shared service.
+'basic': Dedicated service with up to 3 replicas.
+'standard': Dedicated service with up to 12 partitions and 12 replicas.
+'standard2': Similar to standard, but with more capacity per search unit.
+'standard3': The largest Standard offering with up to 12 partitions and 12 replicas (or up to 3 partitions with more indexes if you also set the hostingMode property to 'highDensity').
+'storage_optimized_l1': Supports 1TB per partition, up to 12 partitions.
+'storage_optimized_l2': Supports 2TB per partition, up to 12 partitions.'
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Support.SkuName
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubscriptionId
+The unique identifier for a Microsoft Azure subscription.
+You can obtain this value from the Azure Resource Manager API or the portal.
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateExpanded, Upgrade
+Aliases:
+
+Required: False
+Position: Named
+Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Tag
+Tags to help categorize the resource in the Azure portal.
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UpgradeAvailable
+Indicates if the search service has an upgrade available.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.Search.Support.UpgradeAvailable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.Search.Models.ISearchIdentity
+
+## OUTPUTS
+
+### Microsoft.Azure.PowerShell.Cmdlets.Search.Models.Api20250501.ISearchService
+
+## NOTES
+
+## RELATED LINKS
+
