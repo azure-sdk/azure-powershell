@@ -1,0 +1,67 @@
+---
+Module Name: Az.Nginx
+Module Guid: d30a67f5-e9f1-4825-bf5d-91d71e48b6b4
+Download Help Link: https://learn.microsoft.com/powershell/module/az.nginx
+Help Version: 1.0.0.0
+Locale: en-US
+---
+
+# Az.Nginx Module
+## Description
+Microsoft Azure PowerShell: Nginx cmdlets
+
+## Az.Nginx Cmdlets
+### [Get-AzNginxApiKey](Get-AzNginxApiKey.md)
+Get the specified API Key of the given Nginx deployment
+
+### [Get-AzNginxCertificate](Get-AzNginxCertificate.md)
+Get a certificate of given NGINX deployment
+
+### [Get-AzNginxConfiguration](Get-AzNginxConfiguration.md)
+Get the NGINX configuration of given NGINX deployment
+
+### [Get-AzNginxDefaultWafPolicy](Get-AzNginxDefaultWafPolicy.md)
+Get the Nginx Waf Policy of given Nginx deployment
+
+### [Get-AzNginxDeployment](Get-AzNginxDeployment.md)
+Get the NGINX deployment
+
+### [Get-AzNginxWafPolicy](Get-AzNginxWafPolicy.md)
+Get the Nginx Waf Policy of given Nginx deployment
+
+### [Invoke-AzNginxAnalysisConfiguration](Invoke-AzNginxAnalysisConfiguration.md)
+Analyze an NGINX configuration without applying it to the NGINXaaS deployment
+
+### [New-AzNginxApiKey](New-AzNginxApiKey.md)
+Create or update an API Key for the Nginx deployment in order to access the dataplane API endpoint
+
+### [New-AzNginxCertificate](New-AzNginxCertificate.md)
+Create or update the NGINX certificates for given NGINX deployment
+
+### [New-AzNginxConfiguration](New-AzNginxConfiguration.md)
+Create or update the NGINX configuration for given NGINX deployment
+
+### [New-AzNginxDeployment](New-AzNginxDeployment.md)
+Create or update the NGINX deployment
+
+### [New-AzNginxWafPolicy](New-AzNginxWafPolicy.md)
+Create or update the Nginx Waf Policy for given Nginx deployment
+
+### [Remove-AzNginxApiKey](Remove-AzNginxApiKey.md)
+Delete API key for Nginx deployment
+
+### [Remove-AzNginxCertificate](Remove-AzNginxCertificate.md)
+Deletes a certificate from the NGINX deployment
+
+### [Remove-AzNginxConfiguration](Remove-AzNginxConfiguration.md)
+Reset the NGINX configuration of given NGINX deployment to default
+
+### [Remove-AzNginxDeployment](Remove-AzNginxDeployment.md)
+Delete the NGINX deployment resource
+
+### [Remove-AzNginxWafPolicy](Remove-AzNginxWafPolicy.md)
+Reset the Nginx Waf Policy of given Nginx deployment to default
+
+### [Update-AzNginxDeployment](Update-AzNginxDeployment.md)
+Update the NGINX deployment
+
